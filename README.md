@@ -242,26 +242,43 @@ This highlights the multi-scale nature of reverberant decay behavior in sparse d
 # Repository Structure
 
 ```text
-.
-├── supercollider/
-│   ├── fdn_uniform.scd
-│   ├── fdn_irregular.scd
-│   ├── fdn_optimized.scd
-│   └── fdn_experiments.scd
+fdn-ripple-analysis/
+
+├── README.md
+├── LICENSE
+├── requirements.txt
 │
-├── analysis/
-│   ├── rippleSmoothness.py
-│   ├── autocorrelationStudy.py
-│   └── plots/
+├── docs/
+│   ├── report.pdf
+│   ├── figures/
+│   └── equations/
 │
 ├── audio/
-│   ├── delay_uniform.wav
-│   ├── delay_irregular.wav
-│   ├── delay_optimized.wav
-│   └── experimental/
+│   ├── uniform.wav
+│   ├── irregular.wav
+│   ├── optimized.wav
+│   ├── quasi_uniform.wav
+│   └── golden_ratio.wav
 │
-└── report/
-    └── final_report.pdf
+├── supercollider/
+│   ├── fdn_4x4.scd
+│   ├── delay_experiments.scd
+│   └── exploratory_6x6.scd
+│
+├── analysis/
+│   ├── energyDecayCompare.py
+│   ├── rippleSmoothness.py
+│   ├── autocorrelationStudy.py
+│   └── improveDelay.py
+│
+├── plots/
+│   ├── decay/
+│   ├── ripple/
+│   └── autocorrelation/
+│
+└── results/
+    ├── metrics_tables/
+    └── observations.md
 ```
 
 ---
